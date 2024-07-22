@@ -202,7 +202,7 @@ if vim.o.background == "dark" then
 
         --- Treesitter
         TSAttribute = {},
-        TSConstructor = { fg = ansi.red },
+        TSConstructor = { fg = ansi.cyan },
         TSConditional = { fg = ansi.white },
         TSConstBuiltin = { fg = const_fg },
         TSConstMacro = { fg = ansi.white },
@@ -237,7 +237,7 @@ if vim.o.background == "dark" then
         TSTagDelimiter = { fg = punct_fg },
         TSText = { fg = ansi.white },
         ["@attribute"] = {},
-        ["@constructor"] = { fg = ansi.red },
+        ["@constructor"] = { fg = ansi.cyan },
         ["@conditional"] = { fg = ansi.white },
         ["@constant.builtin"] = { fg = const_fg },
         ["@constant.macro"] = { fg = ansi.white },
@@ -265,8 +265,8 @@ if vim.o.background == "dark" then
         ["@string.regex"] = { bg = "#1d292b", fg = const_fg },
         ["@string.escape"] = { bg = "#1d292b", fg = const_fg },
         ["@symbol"] = {},
-        ["@type"] = { fg = ansi.magenta },
-        ["@type.builtin"] = { fg = ansi.magenta },
+        ["@type"] = { fg = ansi.cyan },
+        ["@type.builtin"] = { fg = ansi.cyan },
         ["@variable"] = { fg = ansi.white },
         ["@variable.builtin"] = { fg = ansi.white },
         ["@tag"] = { fg = ansi.white },
@@ -578,7 +578,7 @@ else
 
         --- Treesitter
         TSAttribute = {},
-        TSConstructor = { fg = ansi.red },
+        TSConstructor = { fg = ansi.cyan },
         TSConditional = { fg = ansi.black },
         TSConstBuiltin = { fg = const_fg },
         TSConstMacro = { fg = ansi.black },
@@ -614,7 +614,7 @@ else
         TSText = { fg = ansi.black },
 
         ["@attribute"] = {},
-        ["@constructor"] = { fg = ansi.red },
+        ["@constructor"] = { fg = ansi.cyan },
         ["@conditional"] = { fg = ansi.black },
         ["@constant.builtin"] = { fg = const_fg },
         ["@constant.macro"] = { fg = ansi.black },
