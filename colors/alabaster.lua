@@ -39,7 +39,8 @@ if vim.o.background == "dark" then
     local diffdelete = "#d2322d"
     local diffchange = "#ec8013"
     local statusline = "#162022"
-    local comment = "#dfdf8e"
+    -- local comment = "#dfdf8e"
+    local comment = "#71aed7"
     local dim_comment = "#696969"
     local mistake = {
         fg = "#c33c33",
@@ -201,16 +202,16 @@ if vim.o.background == "dark" then
 
         --- Treesitter
         TSAttribute = {},
-        TSConstructor = { fg = ansi.white },
+        TSConstructor = { fg = ansi.red },
         TSConditional = { fg = ansi.white },
         TSConstBuiltin = { fg = const_fg },
         TSConstMacro = { fg = ansi.white },
         TSError = { bg = mistake.bg, fg = mistake.fg },
         TSException = { fg = ansi.white },
         TSField = { fg = ansi.white },
-        TSFunction = { fg = ansi.white },
-        TSFuncBuiltin = { fg = ansi.white },
-        TSFuncMacro = { fg = ansi.white },
+        TSFunction = { fg = ansi.red },
+        TSFuncBuiltin = { fg = ansi.red },
+        TSFuncMacro = { fg = ansi.red },
         TSKeyword = { fg = ansi.white },
         TSKeywordFunction = { fg = ansi.white },
         TSLabel = { fg = ansi.white },
@@ -236,16 +237,16 @@ if vim.o.background == "dark" then
         TSTagDelimiter = { fg = punct_fg },
         TSText = { fg = ansi.white },
         ["@attribute"] = {},
-        ["@constructor"] = { fg = ansi.white },
+        ["@constructor"] = { fg = ansi.red },
         ["@conditional"] = { fg = ansi.white },
         ["@constant.builtin"] = { fg = const_fg },
         ["@constant.macro"] = { fg = ansi.white },
         ["@error"] = { bg = mistake.bg, fg = mistake.fg },
         ["@exception"] = { fg = ansi.white },
         ["@field"] = { fg = ansi.white },
-        ["@function"] = { fg = ansi.white },
-        ["@function.builtin"] = { fg = ansi.white },
-        ["@function.macro"] = { fg = ansi.white },
+        ["@function"] = { fg = ansi.red },
+        ["@function.builtin"] = { fg = ansi.red },
+        ["@function.macro"] = { fg = ansi.red },
         ["@keyword"] = { fg = ansi.white },
         ["@keyword.function"] = { fg = ansi.white },
         ["@label"] = { fg = ansi.white },
