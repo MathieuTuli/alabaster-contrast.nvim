@@ -30,7 +30,7 @@ if vim.o.background == "dark" then
     local bg = "#0e1415"
     local fg = "#cecece"
     local punct_fg = "#708b8d"
-    local def_fg = "#cc8bc9"
+    local def_fg = "#71ade7"
     local const_fg = "#cc8bc9"
     local active = "#cd974b"
     local string_fg = "#95cb82"
@@ -142,7 +142,7 @@ if vim.o.background == "dark" then
 
         --- SYNTAX II: TS groups have their own definition, the below are defined to have somewhat working hl w/o treesitter
         Identifier = { fg = ansi.white },
-        Function = { fg = ansi.red },
+        Function = { fg = def_fg },
         Statement = { fg = ansi.white },
         Conditional = { fg = ansi.white },
         Repeat = { fg = ansi.white },
@@ -406,7 +406,7 @@ else
     local bg = "#f7f7f7"
     local fg = "#000000"
     local punct_fg = "#777777"
-    local def_fg = "#7a3e9d"
+    local def_fg = "#325cc0"
     local const_fg = "#7a3e9d"
     local active = "#ffbc5d"
     local active_blue = "#007acc"
@@ -519,7 +519,7 @@ else
 
         --- SYNTAX II: TS groups have their own definition, the below are defined to have somewhat working hl w/o treesitter
         Identifier = { fg = ansi.black },
-        Function = { fg = ansi.red },
+        Function = { fg = def_fg },
         Statement = { fg = ansi.black },
         Conditional = { fg = ansi.black },
         Repeat = { fg = ansi.black },
