@@ -58,7 +58,7 @@ if vim.o.background == "dark" then
         magenta = "#cc8bc9",
         red = "#c33c33",
         white = "#cecece",
-        yellow = "#cd974b",
+        yellow = "#ed974b",
     }
     local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
     local pmenu_bg = "#182325"
