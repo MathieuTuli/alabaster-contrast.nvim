@@ -27,7 +27,7 @@ if vim.o.background == "dark" then
     vim.g.terminal_color_15 = "#ffffff"
 
     -- colors
-    local bg = "#0e1415"
+    local bg = "#181818"
     local fg = "#cecece"
     local punct_fg = "#708b8d"
     local def_fg = "#71ade7"
@@ -38,9 +38,8 @@ if vim.o.background == "dark" then
     local diffadd = "#6abf40"
     local diffdelete = "#d2322d"
     local diffchange = "#ec8013"
-    local statusline = "#162022"
-    -- local comment = "#dfdf8e"
-    local comment = "#71aed7"
+    local statusline = "#2d2d2d"
+    local comment = "#dfdf8e"
     local dim_comment = "#696969"
     local mistake = {
         fg = "#c33c33",
@@ -54,10 +53,9 @@ if vim.o.background == "dark" then
         black = "#333333",
         blue = "#71aed7",
         brightyellow = "#dfdf8e",
-        cyan = "#47bea9",
+        cyan = "#93c9b3",
         green = "#95cb82",
         magenta = "#cc8bc9",
-        purple = "#8c7bc9",
         red = "#c33c33",
         white = "#cecece",
         yellow = "#cd974b",
@@ -84,7 +82,7 @@ if vim.o.background == "dark" then
         DiffDelete = { bg = "#462c32", fg = "#f85149" },
         DiffText = { fg = "#341a00", bg = "#fff987" },
         DiffChange = { bg = "#341a00", fg = "#e3b341" },
-        EndOfBuffer = { fg = "#354c50" },
+        EndOfBuffer = { fg = "#2d2d2d" },
         -- TermCursor   { }, -- cursor in a focused terminal
         TermCursorNC = { fg = bg, bg = fg },
         ErrorMsg = { fg = error, bg = mistake.bg },
@@ -203,16 +201,16 @@ if vim.o.background == "dark" then
 
         --- Treesitter
         TSAttribute = {},
-        TSConstructor = { fg = ansi.purple },
+        TSConstructor = { fg = ansi.white, bold = 1 },
         TSConditional = { fg = ansi.white },
         TSConstBuiltin = { fg = const_fg },
         TSConstMacro = { fg = ansi.white },
         TSError = { bg = mistake.bg, fg = mistake.fg },
         TSException = { fg = ansi.white },
         TSField = { fg = ansi.white },
-        TSFunction = { fg = ansi.red },
-        TSFuncBuiltin = { fg = ansi.red },
-        TSFuncMacro = { fg = ansi.red },
+        TSFunction = { fg = ansi.white },
+        TSFuncBuiltin = { fg = ansi.white },
+        TSFuncMacro = { fg = ansi.white },
         TSKeyword = { fg = ansi.white },
         TSKeywordFunction = { fg = ansi.white },
         TSLabel = { fg = ansi.white },
@@ -238,16 +236,16 @@ if vim.o.background == "dark" then
         TSTagDelimiter = { fg = punct_fg },
         TSText = { fg = ansi.white },
         ["@attribute"] = {},
-        ["@constructor"] = { fg = ansi.purple },
+        ["@constructor"] = { fg = ansi.white, bold = 1},
         ["@conditional"] = { fg = ansi.white },
         ["@constant.builtin"] = { fg = const_fg },
         ["@constant.macro"] = { fg = ansi.white },
         ["@error"] = { bg = mistake.bg, fg = mistake.fg },
         ["@exception"] = { fg = ansi.white },
         ["@field"] = { fg = ansi.white },
-        ["@function"] = { fg = ansi.red },
-        ["@function.builtin"] = { fg = ansi.red },
-        ["@function.macro"] = { fg = ansi.red },
+        ["@function"] = { fg = ansi.white, bold = 1 },
+        ["@function.builtin"] = { fg = ansi.white, bold = 1 },
+        ["@function.macro"] = { fg = ansi.white, bold = 1 },
         ["@keyword"] = { fg = ansi.white },
         ["@keyword.function"] = { fg = ansi.white },
         ["@label"] = { fg = ansi.white },
@@ -266,8 +264,8 @@ if vim.o.background == "dark" then
         ["@string.regex"] = { bg = "#1d292b", fg = const_fg },
         ["@string.escape"] = { bg = "#1d292b", fg = const_fg },
         ["@symbol"] = {},
-        ["@type"] = { fg = ansi.purple },
-        ["@type.builtin"] = { fg = ansi.purple },
+        ["@type"] = { fg = ansi.white },
+        ["@type.builtin"] = { fg = ansi.white },
         ["@variable"] = { fg = ansi.white },
         ["@variable.builtin"] = { fg = ansi.white },
         ["@tag"] = { fg = ansi.white },
@@ -382,6 +380,12 @@ if vim.o.background == "dark" then
         --- asm
         asmDirective = { fg = dim_comment },
         nasmLabel = { link = "@AlabasterDefinition" },
+        ["@markup.heading.1.markdown"] = { fg = ansi.red, bold = true },
+        ["@markup.heading.2.markdown"] = { fg = ansi.yellow, bold = true },
+        ["@markup.heading.3.markdown"] = { fg = ansi.magenta, bold = true },
+        ["@markup.heading.4.markdown"] = { fg = ansi.brightyellow, bold = true },
+        ["@markup.heading.5.markdown"] = { fg = ansi.green, bold = true },
+        ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
     }
 else
     -- terminal colors
@@ -416,8 +420,7 @@ else
     local diffdelete = "#B40600"
     local diffchange = "#ec8013"
     local statusline = "#c9c9c9"
-    -- local comment = "#aa3731"
-    local comment = "#71aed7"
+    local comment = "#aa3731"
     local dim_comment = "#696969"
     local mistake = {
         fg = "#c33c33",
@@ -430,7 +433,6 @@ else
         cyan = "#0083b2",
         green = "#448c27",
         magenta = "#7a3e9d",
-        purple = "#7c7bd0",
         red = "#aa3731",
         white = "#f7f7f7",
         yellow = "#cb9000",
@@ -580,16 +582,16 @@ else
 
         --- Treesitter
         TSAttribute = {},
-        TSConstructor = { fg = ansi.purple },
+        TSConstructor = { fg = ansi.black, bold = 1},
         TSConditional = { fg = ansi.black },
         TSConstBuiltin = { fg = const_fg },
         TSConstMacro = { fg = ansi.black },
         TSError = { bg = mistake.bg, fg = mistake.fg },
         TSException = { fg = ansi.black },
         TSField = { fg = ansi.black },
-        TSFunction = { fg = ansi.red },
-        TSFuncBuiltin = { fg = ansi.red },
-        TSFuncMacro = { fg = ansi.red },
+        TSFunction = { fg = ansi.black },
+        TSFuncBuiltin = { fg = ansi.black },
+        TSFuncMacro = { fg = ansi.black },
         TSKeyword = { fg = ansi.black },
         TSKeywordFunction = { fg = ansi.black },
         TSLabel = { fg = ansi.black },
@@ -616,16 +618,16 @@ else
         TSText = { fg = ansi.black },
 
         ["@attribute"] = {},
-        ["@constructor"] = { fg = ansi.purple },
+        ["@constructor"] = { fg = ansi.black, bold = 1},
         ["@conditional"] = { fg = ansi.black },
         ["@constant.builtin"] = { fg = const_fg },
         ["@constant.macro"] = { fg = ansi.black },
         ["@error"] = { bg = mistake.bg, fg = mistake.fg },
         ["@exception"] = { fg = ansi.black },
         ["@field"] = { fg = ansi.black },
-        ["@function"] = { fg = ansi.red },
-        ["@function.builtin"] = { fg = ansi.red },
-        ["@function.macro"] = { fg = ansi.red },
+        ["@function"] = { fg = ansi.black, bold = 1},
+        ["@function.builtin"] = { fg = ansi.blac, bold = 1 },
+        ["@function.macro"] = { fg = ansi.blac, bold = 1 },
         ["@keyword"] = { fg = ansi.black },
         ["@keyword.function"] = { fg = ansi.black },
         ["@label"] = { fg = ansi.black },
@@ -644,8 +646,8 @@ else
         ["@string.regex"] = { bg = bg, fg = "#777777" },
         ["@string.escape"] = { bg = bg, fg = "#777777" },
         ["@symbol"] = {},
-        ["@type"] = { fg = ansi.purple },
-        ["@type.builtin"] = { fg = ansi.purple },
+        ["@type"] = { fg = ansi.black },
+        ["@type.builtin"] = { fg = ansi.black },
         ["@variable"] = { fg = ansi.black },
         ["@variable.builtin"] = { fg = ansi.black },
         ["@tag"] = { fg = ansi.black },
@@ -760,6 +762,13 @@ else
         --- asm
         asmDirective = { fg = dim_comment },
         nasmLabel = { link = "@AlabasterDefinition" },
+        -- Markdown
+        ["@markup.heading.1.markdown"] = { fg = ansi.red, bold = true },
+        ["@markup.heading.2.markdown"] = { fg = ansi.orange, bold = true },
+        ["@markup.heading.3.markdown"] = { fg = ansi.magenta, bold = true },
+        ["@markup.heading.4.markdown"] = { fg = ansi.yellow, bold = true },
+        ["@markup.heading.5.markdown"] = { fg = ansi.green, bold = true },
+        ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
     }
 end
 
