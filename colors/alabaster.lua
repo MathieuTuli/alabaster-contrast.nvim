@@ -6,7 +6,7 @@ end
 vim.g.colors_name = "alabaster"
 
 local theme
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 if vim.o.background == "dark" then
     -- terminal colors
     vim.g.terminal_color_0 = "#000000"
@@ -110,7 +110,7 @@ if vim.o.background == "dark" then
         PmenuThumb = { bg = "#47666b" },
         Question = { fg = diffadd },
         QuickFixLine = { bg = "#182325" },
-        Search = { bg = "#354c50" },
+        Search = { bg = "#7d7d6d" },
         SpecialKey = { fg = ansi.cyan },
         SpellBad = { undercurl = 1, sp = ansi.red },
         SpellCap = { undercurl = 1, sp = ansi.blue },
@@ -122,8 +122,8 @@ if vim.o.background == "dark" then
         TabLineFill = { bg = statusline },
         TabLineSel = { bg = statusline, fg = ansi.blue },
         Title = { fg = const_fg },
-        Visual = { bg = "#293334" },
-        VisualNOS = { bg = "#293334" },
+        Visual = { bg = statusline },
+        VisualNOS = { bg = statusline },
         WarningMsg = { fg = "#e1ad4c" },
         WildMenu = { bg = "#354c50" },
         WinBar = { bg = bg, fg = ansi.white, bold = true },
@@ -503,8 +503,8 @@ else
         TabLineFill = { bg = statusline },
         TabLineSel = { bg = statusline, fg = ansi.blue },
         Title = { fg = const_fg },
-        Visual = { bg = "#bfdbfe" },
-        VisualNOS = { bg = "#bfdbfe" },
+        Visual = { bg = statusline },
+        VisualNOS = { bg = statusline },
         WarningMsg = { fg = "#e1ad4c" },
         WildMenu = { bg = "#999999" },
         WinBar = { bg = bg, fg = ansi.black, bold = true },
