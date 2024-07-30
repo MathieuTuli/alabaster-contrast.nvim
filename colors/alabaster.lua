@@ -32,7 +32,10 @@ if vim.o.background == "dark" then
     local punct_fg = "#708b8d"
     local def_fg = "#71ade7"
     local const_fg = "#cc8bc9"
-    local builtin_fcn = "#FF00ff"
+    local builtin_const = "#cecece"
+    local builtin_fcn = "#cecece"
+    local builtin_var = "#cecece"
+    local builtin_type = "#cecece"
     local active = "#cd974b"
     local string_fg = "#95cb82"
     local darker_fg = "#7d7d7d"
@@ -239,13 +242,13 @@ if vim.o.background == "dark" then
         ["@attribute"] = {},
         ["@constructor"] = { fg = ansi.white, bold = 1},
         ["@conditional"] = { fg = ansi.white },
-        ["@constant.builtin"] = { fg = const_fg },
+        ["@constant.builtin"] = { fg = builtin_const, underline = 1},
         ["@constant.macro"] = { fg = ansi.white },
         ["@error"] = { bg = mistake.bg, fg = mistake.fg },
         ["@exception"] = { fg = ansi.white },
         ["@field"] = { fg = ansi.white },
         ["@function"] = { fg = ansi.white, bold = 1 },
-        ["@function.builtin"] = { fg = builtin_fcn, bold = 1 },
+        ["@function.builtin"] = { fg = builtin_fcn, bold = 1, underline = 1},
         ["@function.macro"] = { fg = ansi.white, bold = 1 },
         ["@keyword"] = { fg = ansi.white },
         ["@keyword.function"] = { fg = ansi.white },
@@ -266,9 +269,9 @@ if vim.o.background == "dark" then
         ["@string.escape"] = { bg = "#1d292b", fg = const_fg },
         ["@symbol"] = {},
         ["@type"] = { fg = ansi.white },
-        ["@type.builtin"] = { fg = ansi.white },
+        ["@type.builtin"] = { fg = builtin_type, underline = 1},
         ["@variable"] = { fg = ansi.white },
-        ["@variable.builtin"] = { fg = ansi.white },
+        ["@variable.builtin"] = { fg = builtin_var, underline = 1},
         ["@tag"] = { fg = ansi.white },
         ["@tag.delimiter"] = { fg = punct_fg },
         ["@text"] = { fg = ansi.white },
@@ -411,7 +414,10 @@ else
     local bg = "#f7f7f7"
     local fg = "#000000"
     local punct_fg = "#777777"
-    local builtin_fcn = "#000070"
+    local builtin_const = "#000000"
+    local builtin_fcn = "#000000"
+    local builtin_var = "#000000"
+    local builtin_type = "#000000"
     local def_fg = "#325cc0"
     local const_fg = "#7a3e9d"
     local active = "#ffbc5d"
@@ -622,13 +628,13 @@ else
         ["@attribute"] = {},
         ["@constructor"] = { fg = ansi.black, bold = 1},
         ["@conditional"] = { fg = ansi.black },
-        ["@constant.builtin"] = { fg = const_fg },
+        ["@constant.builtin"] = { fg = builtin_const, underline = 1},
         ["@constant.macro"] = { fg = ansi.black },
         ["@error"] = { bg = mistake.bg, fg = mistake.fg },
         ["@exception"] = { fg = ansi.black },
         ["@field"] = { fg = ansi.black },
         ["@function"] = { fg = ansi.black, bold = 1},
-        ["@function.builtin"] = { fg = builtin_fcn, bold = 1 },
+        ["@function.builtin"] = { fg = builtin_fcn, bold = 1, underline = 1},
         ["@function.macro"] = { fg = ansi.black, bold = 1 },
         ["@keyword"] = { fg = ansi.black },
         ["@keyword.function"] = { fg = ansi.black },
@@ -649,9 +655,9 @@ else
         ["@string.escape"] = { bg = bg, fg = "#777777" },
         ["@symbol"] = {},
         ["@type"] = { fg = ansi.black },
-        ["@type.builtin"] = { fg = ansi.black },
+        ["@type.builtin"] = { fg = builtin_type, underline = 1},
         ["@variable"] = { fg = ansi.black },
-        ["@variable.builtin"] = { fg = ansi.black },
+        ["@variable.builtin"] = { fg = builtin_var, underline = 1},
         ["@tag"] = { fg = ansi.black },
         ["@tag.delimiter"] = { fg = punct_fg },
         ["@text"] = { fg = ansi.black },
