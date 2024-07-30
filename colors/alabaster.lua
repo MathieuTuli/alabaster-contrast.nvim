@@ -32,6 +32,7 @@ if vim.o.background == "dark" then
     local punct_fg = "#708b8d"
     local def_fg = "#71ade7"
     local const_fg = "#cc8bc9"
+    local builtin_fcn = "#FF00ff"
     local active = "#cd974b"
     local string_fg = "#95cb82"
     local darker_fg = "#7d7d7d"
@@ -244,7 +245,7 @@ if vim.o.background == "dark" then
         ["@exception"] = { fg = ansi.white },
         ["@field"] = { fg = ansi.white },
         ["@function"] = { fg = ansi.white, bold = 1 },
-        ["@function.builtin"] = { fg = ansi.white, bold = 1 },
+        ["@function.builtin"] = { fg = builtin_fcn, bold = 1 },
         ["@function.macro"] = { fg = ansi.white, bold = 1 },
         ["@keyword"] = { fg = ansi.white },
         ["@keyword.function"] = { fg = ansi.white },
@@ -410,6 +411,7 @@ else
     local bg = "#f7f7f7"
     local fg = "#000000"
     local punct_fg = "#777777"
+    local builtin_fcn = "#000070"
     local def_fg = "#325cc0"
     local const_fg = "#7a3e9d"
     local active = "#ffbc5d"
@@ -626,8 +628,8 @@ else
         ["@exception"] = { fg = ansi.black },
         ["@field"] = { fg = ansi.black },
         ["@function"] = { fg = ansi.black, bold = 1},
-        ["@function.builtin"] = { fg = ansi.blac, bold = 1 },
-        ["@function.macro"] = { fg = ansi.blac, bold = 1 },
+        ["@function.builtin"] = { fg = builtin_fcn, bold = 1 },
+        ["@function.macro"] = { fg = ansi.black, bold = 1 },
         ["@keyword"] = { fg = ansi.black },
         ["@keyword.function"] = { fg = ansi.black },
         ["@label"] = { fg = ansi.black },
