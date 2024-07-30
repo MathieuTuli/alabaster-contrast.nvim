@@ -61,7 +61,7 @@ if vim.o.background == "dark" then
         yellow = "#ed974b",
     }
     local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
-    local pmenu_bg = "#182325"
+    local pmenu_bg = "#2d2d2d"
     local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
     local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = "#333333" }
         or {
@@ -70,13 +70,13 @@ if vim.o.background == "dark" then
         }
     theme = {
         Comment = { fg = comment_fg },
-        ColorColumn = { bg = "#E2EEEE" },
+        ColorColumn = { bg = "#2d2d2d" },
         Conceal = { fg = "#b0b0b0" },
         Cursor = { bg = active, fg = "#000000" },
         -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
         -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
-        CursorColumn = { bg = "#182325" },
-        CursorLine = { bg = "#182325" },
+        CursorColumn = { bg = "#2d2d2d" },
+        CursorLine = { bg = "#2d2d2d" },
         Directory = { fg = ansi.blue },
         DiffAdd = { bg = "#244032", fg = "#56d364" },
         DiffDelete = { bg = "#462c32", fg = "#f85149" },
@@ -87,7 +87,7 @@ if vim.o.background == "dark" then
         TermCursorNC = { fg = bg, bg = fg },
         ErrorMsg = { fg = error, bg = mistake.bg },
         VertSplit = { fg = "#2b3d40" },
-        Folded = { bg = "#182325", fg = "#7d7d7d" },
+        Folded = { bg = "#2d2d2d", fg = "#7d7d7d" },
         FoldColumn = { bg = bg, fg = "#4d4d4d" },
         SignColumn = {},
         IncSearch = { bg = ansi.yellow, fg = bg },
@@ -105,11 +105,11 @@ if vim.o.background == "dark" then
         -- NormalNC     { }, -- normal text in non-current windows
         FloatBorder = floatborder,
         Pmenu = { bg = pmenu_bg },
-        PmenuSel = { bg = "#354c50" },
-        PmenuSbar = { bg = "#212f31" },
-        PmenuThumb = { bg = "#47666b" },
+        PmenuSel = { bg = "#494949" },
+        PmenuSbar = { bg = "#2d2d2d" },
+        PmenuThumb = { bg = "#696969" },
         Question = { fg = diffadd },
-        QuickFixLine = { bg = "#182325" },
+        QuickFixLine = { bg = "#2d2d2d" },
         Search = { bg = "#7d7d6d" },
         SpecialKey = { fg = ansi.cyan },
         SpellBad = { undercurl = 1, sp = ansi.red },
@@ -162,7 +162,7 @@ if vim.o.background == "dark" then
         -- SpecialChar = { fg = diffchange }, --  special character in a constant
         -- Tag            { }, --    you can use CTRL-] on this
         -- Delimiter      { },
-        SpecialComment = { bg = "#1d292b", fg = ansi.blue },
+        SpecialComment = { bg = "#2d2d2d", fg = ansi.blue },
         debugPc = { bg = "#0f2534" },
         debugBreakpoint = { bg = "#b33229" },
         helpHyperTextJump = { fg = ansi.magenta },
@@ -764,9 +764,9 @@ else
         nasmLabel = { link = "@AlabasterDefinition" },
         -- Markdown
         ["@markup.heading.1.markdown"] = { fg = ansi.red, bold = true },
-        ["@markup.heading.2.markdown"] = { fg = ansi.orange, bold = true },
+        ["@markup.heading.2.markdown"] = { fg = ansi.yellow, bold = true },
         ["@markup.heading.3.markdown"] = { fg = ansi.magenta, bold = true },
-        ["@markup.heading.4.markdown"] = { fg = ansi.yellow, bold = true },
+        ["@markup.heading.4.markdown"] = { fg = ansi.brightyellow, bold = true },
         ["@markup.heading.5.markdown"] = { fg = ansi.green, bold = true },
         ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
     }
