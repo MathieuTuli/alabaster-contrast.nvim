@@ -65,6 +65,7 @@ if vim.o.background == "dark" then
         white = "#cecece",
         yellow = "#ed974b",
     }
+    local keyword = "#eeeece"
     local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
     local pmenu_bg = "#2d2d2d"
     local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
@@ -251,8 +252,8 @@ if vim.o.background == "dark" then
         ["@function"] = { fg = ansi.white, bold = 1 },
         ["@function.builtin"] = { fg = builtin_fcn, bold = 1, underline = 1},
         ["@function.macro"] = { fg = ansi.white, bold = 1 },
-        ["@keyword"] = { fg = ansi.white },
-        ["@keyword.function"] = { fg = ansi.white },
+        ["@keyword"] = { fg = keyword },
+        ["@keyword.function"] = { fg = keyword },
         ["@label"] = { fg = ansi.white },
         ["@method"] = { fg = ansi.white },
         ["@module"] = { fg = ansi.white },
@@ -447,6 +448,7 @@ else
         white = "#f7f7f7",
         yellow = "#cb9000",
     }
+    local keyword = "#3d3d2d"
     local error = "#d13e23"
     local warn = "#BC7500"
     local hint = ansi.blue
@@ -638,8 +640,8 @@ else
         ["@function"] = { fg = ansi.black, bold = 1},
         ["@function.builtin"] = { fg = builtin_fcn, bold = 1, underline = 1},
         ["@function.macro"] = { fg = ansi.black, bold = 1 },
-        ["@keyword"] = { fg = ansi.black },
-        ["@keyword.function"] = { fg = ansi.black },
+        ["@keyword"] = { fg = keyword },
+        ["@keyword.function"] = { fg = keyword },
         ["@label"] = { fg = ansi.black },
         ["@method"] = { fg = ansi.black },
         ["@module"] = { fg = ansi.black },
