@@ -391,6 +391,7 @@ if vim.o.background == "dark" then
         ["@markup.heading.4.markdown"] = { fg = ansi.brightyellow, bold = true },
         ["@markup.heading.5.markdown"] = { fg = ansi.green, bold = true },
         ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
+        ["@markup.quote.markdown"] = { fg = ansi.cyan, bold = true },
     }
 else
     -- terminal colors
@@ -779,6 +780,7 @@ else
         ["@markup.heading.4.markdown"] = { fg = ansi.brightyellow, bold = true },
         ["@markup.heading.5.markdown"] = { fg = ansi.green, bold = true },
         ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
+        ["@markup.quote.markdown"] = { fg = ansi.cyan, bold = true },
     }
 end
 
