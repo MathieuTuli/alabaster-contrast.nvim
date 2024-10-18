@@ -394,6 +394,7 @@ if vim.o.background == "dark" then
         ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.quote.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.raw.markdown_inline"] = { fg = ansi.fg, bold = true },
+        ["@markup.link.markdown_inline"] = { fg = ansi.blue },
     }
 else
     -- terminal colors
@@ -785,6 +786,7 @@ else
         ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.quote.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.raw.markdown_inline"] = { fg = ansi.white, bold = true },
+        ["@markup.link.markdown_inline"] = { fg = ansi.blue },
     }
 end
 
