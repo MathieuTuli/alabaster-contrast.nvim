@@ -394,8 +394,8 @@ if vim.o.background == "dark" then
         ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.quote.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.raw.markdown_inline"] = { fg = ansi.fg, bold = true },
-        ["@_url.markdown_inline"] = { fg = ansi.blue },
-        ["@_label.markdown_inline"] = { fg = ansi.blue },
+        ["@ObsidianRefText"] = { fg = ansi.blue },
+        ["@ObsidianExtLinkIcon"] = { fg = ansi.blue },
     }
 else
     -- terminal colors
@@ -787,8 +787,8 @@ else
         ["@markup.heading.6.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.quote.markdown"] = { fg = ansi.cyan, bold = true },
         ["@markup.raw.markdown_inline"] = { fg = ansi.white, bold = true },
-        ["@_url.markdown_inline"] = { fg = ansi.blue },
-        ["@_label.markdown_inline"] = { fg = ansi.blue },
+        ["@ObsidianRefText"] = { fg = ansi.blue },
+        ["@ObsidianExtLinkIcon"] = { fg = ansi.blue },
     }
 end
 
