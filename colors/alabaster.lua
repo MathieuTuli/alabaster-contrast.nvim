@@ -396,7 +396,7 @@ if vim.o.background == "dark" then
         ["@markup.raw.markdown_inline"] = { fg = ansi.fg, bold = true },
         ["@markup.link.label.markdown_inline"] = { fg = ansi.blue, underline = true},
         ["@markup.link.url.markdown_inline"] = { fg = ansi.blue, underline = true},
-        ["ObsidianRefText"] = { fg = ansi.blue, underline = true},
+        ObsidianRefText = { fg = ansi.blue, underline = true},
 
     }
 else
@@ -791,7 +791,7 @@ else
         ["@markup.raw.markdown_inline"] = { fg = ansi.white, bold = true },
         ["@markup.link.label.markdown_inline"] = { fg = ansi.blue, underline = true},
         ["@markup.link.url.markdown_inline"] = { fg = ansi.blue, underline = true},
-        ["ObsidianRefText"] = { fg = ansi.blue, underline = true},
+        ObsidianRefText = { fg = ansi.blue, underline = true},
     }
 end
 
