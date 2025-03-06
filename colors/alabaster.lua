@@ -27,7 +27,7 @@ if vim.o.background == "dark" then
     vim.g.terminal_color_15 = "#ffffff"
 
     -- colors
-    local bg = "#00ff00"
+    local bg = "#181818"
     local fg = "#cecece"
     local punct_fg = "#708b8d"
     local def_fg = "#71ade7"
