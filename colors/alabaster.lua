@@ -78,9 +78,7 @@ if vim.o.background == "dark" then
         Comment = { fg = comment_fg },
         ColorColumn = { bg = "#2d2d2d" },
         Conceal = { fg = "#b0b0b0" },
-        Cursor = { bg = "#ff0000", fg = "#ffffff", bold = true },
-        iCursor = { bg = "#00ff00", fg = "#ffffff", bold = true },
-        vCursor = { bg = "#0000ff", fg = "#ffffff", bold = true },
+        Cursor = { bg = active, fg = "#000000" },
         -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
         -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
         CursorColumn = { bg = "#2d2d2d" },
@@ -473,9 +471,7 @@ else
         Comment = { fg = comment_fg },
         ColorColumn = { bg = "#E2EEEE" },
         Conceal = { fg = "#b0b0b0" },
-        Cursor = { bg = "#ff0000", fg = "#ffffff", bold = true },
-        iCursor = { bg = "#00ff00", fg = "#ffffff", bold = true },
-        vCursor = { bg = "#0000ff", fg = "#ffffff", bold = true },
+        Cursor = { bg = "#007acc", fg = "#bfdbfe" },
         -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
         -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
         CursorColumn = { bg = "#E2EEEE" },
