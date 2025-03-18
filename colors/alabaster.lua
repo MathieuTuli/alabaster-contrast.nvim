@@ -314,6 +314,8 @@ if vim.o.background == "dark" then
         ["@lsp.typemod.property.declaration"] = { fg = var_fg },
         ["@lsp.typemod.property.definition"] = { fg = var_fg },
         ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.enum.globalScope"] = { fg = def_fg },
+        ["@lsp.typemod.enum.definition"] = { fg = def_fg },
         --- Gitsigns
         GitSignsAdd = { fg = diffadd },
         GitSignsChange = { fg = diffchange },
@@ -715,6 +717,9 @@ else
         ["@lsp.typemod.property.declaration"] = { fg = var_fg },
         ["@lsp.typemod.property.definition"] = { fg = var_fg },
         ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
+        ["@lsp.typemod.enum.globalScope"] = { fg = def_fg },
+        ["@lsp.typemod.enum.definition"] = { fg = def_fg },
+
         ["@string.regex"] = { bg = bg, fg = "#777777" },
         ["@string.escape"] = { bg = bg, fg = "#777777" },
         ["@symbol"] = {},
