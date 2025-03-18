@@ -305,6 +305,8 @@ if vim.o.background == "dark" then
         ["@lsp.typemod.variable.declaration"] = { fg = var_fg },
         ["@lsp.typemod.variable.definition"] = { fg = var_fg },
         ["@lsp.typemod.parameter.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.functionScope"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.readonly"] = { fg = var_fg },
         ["@lsp.typemod.parameter.definition"] = { fg = var_fg },
         ["@lsp.typemod.property.declaration"] = { fg = var_fg },
         ["@lsp.typemod.property.definition"] = { fg = var_fg },
