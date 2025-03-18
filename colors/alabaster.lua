@@ -31,7 +31,7 @@ if vim.o.background == "dark" then
     local fg = "#cecece"
     local punct_fg = "#708b8d"
     local def_fg = "#71ade7"
-    local var_fg = "#c479db"
+    local var_fg = "#f5f264"
     -- local const_fg = "#cc8bc9"
     local const_fg = "#cecece"
     local builtin_const = "#cecece"
@@ -304,6 +304,8 @@ if vim.o.background == "dark" then
         ["@lsp.typemod.class.definition"] = { fg = def_fg, bold = 1 },
         ["@lsp.typemod.variable.declaration"] = { fg = var_fg },
         ["@lsp.typemod.variable.definition"] = { fg = var_fg },
+        ["@lsp.typemod.variable.functionScope"] = { fg = var_fg },
+        ["@lsp.typemod.variable.readonly"] = { fg = var_fg },
         ["@lsp.typemod.parameter.declaration"] = { fg = var_fg },
         ["@lsp.typemod.parameter.functionScope"] = { fg = var_fg },
         ["@lsp.typemod.parameter.readonly"] = { fg = var_fg },
@@ -453,7 +455,7 @@ else
     local builtin_var = "#000000"
     local builtin_type = "#000000"
     local def_fg = "#325cc0"
-    local var_fg = "#984cb0"
+    local var_fg = "#f5f264"
     -- local const_fg = "#7a3e9d"
     local const_fg = "#000000"
     local active = "#ffbc5d"
@@ -702,7 +704,11 @@ else
         ["@lsp.typemod.class.definition"] = { fg = def_fg, bold = 1 },
         ["@lsp.typemod.variable.declaration"] = { fg = var_fg },
         ["@lsp.typemod.variable.definition"] = { fg = var_fg },
+        ["@lsp.typemod.variable.functionScope"] = { fg = var_fg },
+        ["@lsp.typemod.variable.readonly"] = { fg = var_fg },
         ["@lsp.typemod.parameter.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.functionScope"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.readonly"] = { fg = var_fg },
         ["@lsp.typemod.parameter.definition"] = { fg = var_fg },
         ["@lsp.typemod.property.declaration"] = { fg = var_fg },
         ["@lsp.typemod.property.definition"] = { fg = var_fg },
