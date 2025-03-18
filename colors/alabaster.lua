@@ -31,6 +31,7 @@ if vim.o.background == "dark" then
     local fg = "#cecece"
     local punct_fg = "#708b8d"
     local def_fg = "#71ade7"
+    local var_fg = "#da73fa"
     -- local const_fg = "#cc8bc9"
     local const_fg = "#cecece"
     local builtin_const = "#cecece"
@@ -301,12 +302,12 @@ if vim.o.background == "dark" then
         ["@lsp.typemod.function.definition"] = { fg = def_fg, bold = 1 },
         ["@lsp.typemod.class.declaration"] = { fg = def_fg, bold = 1 },
         ["@lsp.typemod.class.definition"] = { fg = def_fg, bold = 1 },
-        ["@lsp.typemod.variable.declaration"] = { fg = punct_fg },
-        ["@lsp.typemod.variable.definition"] = { fg = punct_fg },
-        ["@lsp.typemod.parameter.declaration"] = { fg = punct_fg },
-        ["@lsp.typemod.parameter.definition"] = { fg = punct_fg },
-        ["@lsp.typemod.property.declaration"] = { fg = punct_fg },
-        ["@lsp.typemod.property.definition"] = { fg = punct_fg },
+        ["@lsp.typemod.variable.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.variable.definition"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.definition"] = { fg = var_fg },
+        ["@lsp.typemod.property.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.property.definition"] = { fg = var_fg },
         ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
         --- Gitsigns
         GitSignsAdd = { fg = diffadd },
@@ -450,6 +451,7 @@ else
     local builtin_var = "#000000"
     local builtin_type = "#000000"
     local def_fg = "#325cc0"
+    local var_fg = "#984cb0"
     -- local const_fg = "#7a3e9d"
     local const_fg = "#000000"
     local active = "#ffbc5d"
@@ -696,12 +698,12 @@ else
         ["@lsp.typemod.function.definition"] = { fg = def_fg, bold = 1 },
         ["@lsp.typemod.class.declaration"] = { fg = def_fg, bold = 1 },
         ["@lsp.typemod.class.definition"] = { fg = def_fg, bold = 1 },
-        ["@lsp.typemod.variable.declaration"] = { fg = punct_fg },
-        ["@lsp.typemod.variable.definition"] = { fg = punct_fg },
-        ["@lsp.typemod.parameter.declaration"] = { fg = punct_fg },
-        ["@lsp.typemod.parameter.definition"] = { fg = punct_fg },
-        ["@lsp.typemod.property.declaration"] = { fg = punct_fg },
-        ["@lsp.typemod.property.definition"] = { fg = punct_fg },
+        ["@lsp.typemod.variable.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.variable.definition"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.parameter.definition"] = { fg = var_fg },
+        ["@lsp.typemod.property.declaration"] = { fg = var_fg },
+        ["@lsp.typemod.property.definition"] = { fg = var_fg },
         ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
         ["@string.regex"] = { bg = bg, fg = "#777777" },
         ["@string.escape"] = { bg = bg, fg = "#777777" },
